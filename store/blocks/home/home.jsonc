@@ -1,0 +1,278 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#banner",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+       "__fold__",
+      "flex-layout.row#deals",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "flex-layout.row#cards1",
+      "rich-text#categories-title",
+      "list-context.image-list#categories",
+      "newsletter-form",
+      "info-card#next"
+    ]
+  },
+
+  "list-context.image-list#banner": {
+    "children": ["slider-layout#banner-images"],
+    "props": {
+      "height": 630,
+      "preload": true,
+      "images": [
+        {
+          "image": "https://firebasestorage.googleapis.com/v0/b/etana2.appspot.com/o/vtex%2Fport1tiny.jpg?alt=media&token=a70b1585-862c-464d-a8ab-46b1ab2e49b0",
+          "mobileImage": "https://firebasestorage.googleapis.com/v0/b/etana2.appspot.com/o/vtex%2FHnet.com-image%20(3).jpg?alt=media&token=8e52febf-df69-4436-bc81-84bdb2625cd8"
+        },
+        {
+          "image": "https://firebasestorage.googleapis.com/v0/b/etana2.appspot.com/o/vtex%2Fpor2tiny.jpg?alt=media&token=23fa9954-72e0-46e9-bd84-a6c5e00ec4db",
+          "mobileImage": "https://firebasestorage.googleapis.com/v0/b/etana2.appspot.com/o/vtex%2FHnet.com-image%20(4).jpg?alt=media&token=f5ec3515-2b51-4896-9af1-9650c6819780"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#banner-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "autoplay": {
+        "timeout": 7000,
+        "stopOnHover": true
+      },
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## **Colección 22**",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"],
+    "props": {
+      "blockClass": "shelf-slider"
+    }
+  },
+  
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "category": "14/15"
+    }
+  },
+  
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  "flex-layout.row#cards1": {
+    "children": [
+      "info-card#home1",
+      "info-card#home2"
+    ]
+  },
+  
+  "info-card#home1": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/etana2.appspot.com/o/vtex%2F3.jpg?alt=media&token=8ba1adbb-8421-4f35-ad33-449dd3b877cb",
+      "headline": "BOTINETAS",
+      "callToActionText": "VER",
+      "callToActionUrl": "/collections/botinetas",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#home2": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/etana2.appspot.com/o/vtex%2F2.jpg?alt=media&token=d991d2a6-5c1a-44be-a43a-1d7905864ba7",
+      "headline": "MEDIA CAÑA",
+      "callToActionText": "VER",
+      "callToActionUrl": "/collections/media-cana",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  "rich-text#categories-title": {
+    "props": {
+      "text": "## **NUESTRAS FAVORITAS**",
+      "blockClass": "categoriesTitle"
+    }
+  },
+
+  "list-context.image-list#categories": {
+    "children": ["slider-layout#categories-images"],
+    "props": {
+      "height": 630,
+      "preload": true,
+      "images": [
+        {
+          "link": {
+            "url": "/kiannah__/p?skuId=8302"
+          },
+          "image": "https://firebasestorage.googleapis.com/v0/b/etana2.appspot.com/o/vtex%2F1.jpg?alt=media&token=26bc0eaa-75b4-4054-ab6a-292ea47968a6",
+          "mobileImage": "https://firebasestorage.googleapis.com/v0/b/etana2.appspot.com/o/vtex%2F1.jpg?alt=media&token=26bc0eaa-75b4-4054-ab6a-292ea47968a6"
+        },
+        {
+          "link": {
+            "url": "/nohi__/p?skuId=8310"
+          },
+          "image": "https://firebasestorage.googleapis.com/v0/b/etana2.appspot.com/o/vtex%2F5.jpg?alt=media&token=68fa7eef-4221-4c34-9de8-a6cbfb4921ee",
+          "mobileImage": "https://firebasestorage.googleapis.com/v0/b/etana2.appspot.com/o/vtex%2F5.jpg?alt=media&token=68fa7eef-4221-4c34-9de8-a6cbfb4921ee"
+        },
+        {
+          "link": {
+            "url": "/olina/p?skuId=8328"
+          },
+          "image": "https://firebasestorage.googleapis.com/v0/b/etana2.appspot.com/o/vtex%2F4b.jpg?alt=media&token=abb53024-764a-4abf-9ddb-643df067c733",
+          "mobileImage": "https://firebasestorage.googleapis.com/v0/b/etana2.appspot.com/o/vtex%2F4b.jpg?alt=media&token=abb53024-764a-4abf-9ddb-643df067c733"
+        },
+        {
+          "link": {
+            "url": "/kaleo/p?skuId=8330"
+          },
+          "image": "https://firebasestorage.googleapis.com/v0/b/etana2.appspot.com/o/vtex%2F10.jpg?alt=media&token=51441f52-e164-46dd-9c35-103154f4e42d",
+          "mobileImage": "https://firebasestorage.googleapis.com/v0/b/etana2.appspot.com/o/vtex%2F10.jpg?alt=media&token=51441f52-e164-46dd-9c35-103154f4e42d"
+        },
+        {
+          "link": {
+            "url": "/lilo-rose__/p?skuId=8303"
+          },
+          "image": "https://firebasestorage.googleapis.com/v0/b/etana2.appspot.com/o/vtex%2F7.jpg?alt=media&token=0604de04-c72a-4712-bdd9-6ffa44fbc98b",
+          "mobileImage": "https://firebasestorage.googleapis.com/v0/b/etana2.appspot.com/o/vtex%2F7.jpg?alt=media&token=0604de04-c72a-4712-bdd9-6ffa44fbc98b"
+        },
+        {
+          "link": {
+            "url": "/mele__/p?skuId=8309"
+          },
+          "image": "https://firebasestorage.googleapis.com/v0/b/etana2.appspot.com/o/vtex%2F9.jpg?alt=media&token=fdcb72cf-c281-4492-973e-c0f412317aae",
+          "mobileImage": "https://firebasestorage.googleapis.com/v0/b/etana2.appspot.com/o/vtex%2F9.jpg?alt=media&token=fdcb72cf-c281-4492-973e-c0f412317aae"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#categories-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "categories"
+    }
+  },
+
+  "info-card#next": {
+    "props": {
+      "id": "info-card-next",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/etana2.appspot.com/o/vtex%2Floquevienetext2.jpg?alt=media&token=6f420671-53b8-4f9b-87b6-562674da9942",
+      "headline": " ",
+      "callToActionText": "PROXIMAMENTE",
+      "blockClass": "info-card-next",
+      "textAlignment": "center"
+    }
+  },
+
+  "newsletter-form": {
+    "children": [
+      "responsive-layout.desktop",
+      "responsive-layout.phone"
+    ]
+  },
+
+  "responsive-layout.desktop": {
+    "children": ["flex-layout.row#newsletter"],
+    "props": {
+      "blockClass": "newsletter"
+    }
+  },
+
+   "responsive-layout.phone": {
+    "children": [
+      "rich-text#newsletter-title",
+      "flex-layout.row#newsletter2"
+    ],
+    "props": {
+      "blockClass": "newsletter-mobile"
+    }
+  },
+
+  "flex-layout.row#newsletter": {
+    "children": [
+      "rich-text#newsletter-title",
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  },
+
+  "flex-layout.row#newsletter2": {
+    "children": [
+      "newsletter-input-email",
+      "newsletter-submit"
+    ],
+    "props": {
+      "blockClass": "newsletter-mobile"
+    }
+  },
+
+  "rich-text#newsletter-title": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "**Suscribite al Newsletter**\nRecibí ofertas y novedades en tu mail",
+      "textColor": "c-on-emphasis",
+      "font": "t-body",
+      "blockClass": "newsletter-title"
+    }
+  },
+
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "Escribí tu email",
+      "errorMessage": "*Por favor, ingrese un email válido",
+      "blockClass": "newsletter-input"
+    }
+  },
+
+  "newsletter-submit": {
+    "props": {
+      "submitButtonLabel": "▶",
+      "blockClass": "newsletter-submit"
+    }
+  }
+
+}

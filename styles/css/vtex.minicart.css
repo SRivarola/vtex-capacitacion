@@ -1,0 +1,17 @@
+.cartIcon{
+    color: #515151;
+}
+
+.openIconContainer :global(.vtex-button):hover {
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.openIconContainer :global(.vtex-button):hover:active {
+    box-shadow: inset 0px 3px 8px #0000003d;
+}
+
+.minicartCheckoutButton :global(.vtex-button) {
+    border: none;
+    color: #3f3f40;
+}

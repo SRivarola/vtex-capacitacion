@@ -1,0 +1,123 @@
+.SKUSelectorContainer--skuSelector{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+}
+
+.SKUSelectorContainer--skuSelector :global(.vtex-store-components-3-x-skuSelectorName) {
+  display: flex;
+  justify-content: center;
+}
+.frameAround--skuSelector {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  z-index: 99;
+  border-color: #fbe768;
+  border-width: 3px;
+}
+
+.frameAround--skuSelector:hover{
+  border: 2px solid #656565;
+}
+
+.skuSelectorInternalBox--skuSelector {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: -5px;
+  margin-top: -2px;
+  padding: 0;
+  border: none;
+}
+
+.skuSelectorInternalBox--skuSelector:hover{
+  border: none;
+}
+
+.skuSelectorItemTextValue--skuSelector {
+  margin-left: -3px;
+}
+
+.element{
+  padding: 5px;
+  z-index: 99;
+  border-radius: 5px;
+  margin: 5px;
+  transition: all;
+  transition-duration: .5s;
+  height: fit-content !important;
+}
+
+.element:hover  {
+  z-index: 100;
+  box-shadow: rgba(88, 88, 88, 0.35) 0px 3px 8px;
+}
+
+.element :global(.vtex-button) {
+  background-color: #fbe768;
+  border: 1px solid #fbe768;
+  color: #3f3f40;
+  font-weight: bold;
+  margin: 0;
+}
+
+.element :global(.vtex-button):hover{
+  background-color: #ffe16b;
+}
+
+.element :global(.vtex-product-summary-2-x-imageContainer) {
+  overflow: hidden;
+  border-radius: 0.25rem;
+}
+
+.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround, .skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
+  border-radius: 50%;
+}
+
+.container :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 1;
+}
+
+@media screen and (max-width: 40em) {
+  .container :global(.vtex-modal-layout-0-x-triggerContainer) {
+    display: none;
+  }
+}
+
+.nameContainer {
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: 40px;
+}
+
+.brandName {
+  font-weight: 600;
+  font-size: 18px;
+  color: #515151;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.image {
+  border-radius: 0.25rem;
+  transition: all;
+  transition-duration: .5s;
+}
+
+.image:hover {
+  transform: scale(1.1);
+}

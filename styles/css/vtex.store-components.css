@@ -1,0 +1,231 @@
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  border-radius: 25px 0 0 25px !important;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border: none !important;
+  border-radius: 0 25px 25px 0 !important;
+}
+
+.infoCardContainer--info-card-next {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.infoCardTextContainer--info-card-next :global(.vtex-button) {
+  background-color: #fff !important;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.infoCardTextContainer--info-card-next {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+}
+
+.infoCardContainer--info-card-next{
+  height: 460px;
+}
+
+@media only screen and (max-width: 640px) {
+  .infoCardContainer--info-card-next {
+    display: flex;
+    justify-content:  center;
+    position: relative;
+  }
+  .infoCardTextContainer--info-card-next {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center;
+  }
+}
+
+.imageElement--categories {
+  border-radius: 15px;
+  height: 500px;
+  width: 300px !important;
+  max-height: 500px !important;
+  overflow: hidden;
+}
+
+.subscriberContainer :global(.vtex-button)  {
+  border: none;
+  color: #3f3f40;
+}
+
+.showMoreButton {
+  padding: 10px 20px;
+  background-color: #fbe768;
+  color: #3f3f40;
+  border-radius: 5px;
+}
+
+.productDescriptionContainer{
+  padding: 0 20px;
+}
+
+.productDescriptionContainer :global(.vtex-store-components-3-x-content) {
+  line-height: 25px;
+  padding-left: 10px;
+}
+
+.productDescriptionTitle {
+  font-size: 32px;
+}
+
+.caretIcon{
+  padding: 10px;
+  box-shadow: #0000003d 0px 3px 8px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.caretIcon:active {
+  box-shadow: inset 0 3px 8px #0000003d;
+}
+
+.frameAround {
+  border-color: #f1d82f;
+  border-width: 3px;
+}
+
+.swiperCaret{
+  color: #f1d82f;
+}
+
+.carouselCursorDefault{
+  color: #a3a3a3;
+}
+
+.swiperBullet {
+  width: 10px;
+  height: 10px;
+}
+
+.swiperBullet--active {
+  color: #f1d82f;
+}
+
+.productBrand--quickview {
+  font-size: 40px;
+  font-style: italic;
+  color: #000;
+}
+
+.sellingPrice :global(.vtex-store-components-3-x-sellingPrice) {
+  color: #515151;
+}
+
+.notificationBarContainer {
+  background-color: #e6f1e6;
+  color: #03034e;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.infoCardContainer--info-card-home {
+  padding: 0px !important;
+  position: relative;
+  height: 600px !important;
+  overflow: hidden;
+  background-size: 100% !important;
+  transition: all;
+  transition-duration: 0.5s;
+  background-position-y: 60%;
+}
+
+.infoCardContainer--info-card-home:hover{
+  background-size: 110% !important;
+}
+
+.infoCardTextContainer{
+  width: 75% !important;
+}
+
+.infoCardHeadline--info-card-home{
+  font-size: 46px;
+  color: #fff;
+  width: 1000px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.infoCardCallActionContainer--info-card-home :global(.vtex-button){
+  background-color: #fbe768c3;
+  font-weight: bold;
+  color: #3f3f40;
+  border: none;
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+.infoCardCallActionContainer--info-card-home :global(.vtex-button):hover{
+  background-color: #fbe768;
+}
+
+.container{
+  max-width: 100%;
+  margin: 10px 0px;
+}
+
+.imageElement--deals{
+  background-color: #3f3f40;
+  border-radius: 50%;
+  padding: 10px;
+
+}
+.imageElement--storePrint {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.skuSelectorContainer {
+  margin: 1rem 0;
+}
+
+@media only screen and (min-width: 640px) {
+  .newsletter .container {
+    padding: 140px;
+  }
+  .label {
+     font-size: 40px;
+  }
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 70%;
+  }
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+}
+
+.productImagesContainer--quickview .carouselContainer {
+  justify-content: flex-start;
+}
+
+.productImagesContainer--quickview .productImageTag {
+  object-fit: cover !important;
+}
+
+.productImagesContainer--quickview .carouselGaleryThumbs {
+  display: none;
+}
+
+.productImagesContainer--quickview .carouselGaleryCursor {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.productNameContainer {
+  color: #3f3f40;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.image {
+  image-rendering: -webkit-optimize-contrast;
+}

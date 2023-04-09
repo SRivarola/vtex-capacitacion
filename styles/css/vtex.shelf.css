@@ -1,0 +1,37 @@
+.relatedProducts--related-products{
+    padding: 0 40px;
+}
+
+.relatedProducts--related-products :global(.vtex-shelf-1-x-slide) {
+    padding: 0 150px;
+}
+
+.title--related-products{
+    padding-top: 30px;
+}
+
+.relatedProducts--related-products :global(.vtex-product-summary-2-x-information){
+    height: 150px;
+}
+
+.relatedProducts--related-products :global(.vtex-product-summary-2-x-buyButtonContainer) {
+    display: none;
+}
+
+.caretIcon--related-products{
+    color: #f1d82f;
+    padding: 10px;
+    box-shadow: #0000003d 0px 3px 8px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.caretIcon--related-products:active {
+    box-shadow: inset 0 3px 8px #0000003d;
+}
+
+.dot--isActive--related-products {
+    background-color: #f1d82f;
+}
+
+

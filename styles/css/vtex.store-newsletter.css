@@ -1,0 +1,63 @@
+.newsletterForm{
+    background-color: #3f3f40;
+    padding: 20px;
+}
+
+.emailInputContainer--newsletter-input {
+    display: flex;
+    align-items: center !important;
+    border: none;
+}
+
+.emailInputContainer--newsletter-input :global(.vtex-input-prefix__group) {
+    border: none !important;
+    outline: none !important;
+    height: 60px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.emailInputContainer--newsletter-input :global(.vtex-styleguide-9-x-input){
+    background-color: #5e5e5e;
+    border-radius: 5px 0px 0px 5px;
+    height: 60px;
+    color: #fff;
+    padding-right: 0;
+}
+
+.emailInputContainer--newsletter-input :global(.vtex-input__error) {
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.defaultSuccessMessage--newsletter{
+    background-color: #3f3f40;
+    padding: 20px;
+    height: 130px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.formSubmitContainer--newsletter-submit {
+    display: flex;
+    align-items: center !important;
+}
+
+.formSubmitContainer--newsletter-submit :global(.vtex-button) {
+    background-color: #5e5e5e;
+    outline: none !important;
+    border: none !important;
+    border-radius: 0px 10px 10px 0px;
+    color: #fbe768;
+    font-weight: bolder;
+    height: 60px;
+}
+
+/* .emailInputContainer--newsletter-input{
+    margin: 20px;
+    width: 50% !important;
+} */

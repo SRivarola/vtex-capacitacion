@@ -1,0 +1,14 @@
+.styledLinkContainer {
+    width: 18rem;
+}
+
+.styledLinkContent{
+    font-weight: bold;
+    transition: all;
+    transition-duration: 1s;
+    font-size: 16px;
+}
+
+.styledLinkContent:hover{
+    color: black;
+}
